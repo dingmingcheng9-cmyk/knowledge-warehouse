@@ -65,3 +65,13 @@
 - 新建: concepts/china-icp-beian.md
 - 新建: concepts/china-home-broadband-public-ip.md
 - 更新: index.md
+
+## [2026-05-07] ingest | 豆包对话：FastAPI 环境搭建 + ORM 原理 + /proc 文件系统
+- 来源: https://www.doubao.com/thread/w4ca1d3395d9f845c
+- 来源: https://www.doubao.com/thread/wb7331b7dfc9ae6df
+- raw: raw/articles/fastapi-backend-doubao-conversation.md（FastAPI 入门教学，34 轮对话）
+- raw: raw/articles/proc-orm-doubao-conversation.md（/proc + ORM 详解，8 轮对话）
+- 新建: concepts/fastapi-basics.md
+- 新建: concepts/sqlalchemy-orm-basics.md
+- 新建: concepts/linux-proc-filesystem.md
+- 更新: index.md
