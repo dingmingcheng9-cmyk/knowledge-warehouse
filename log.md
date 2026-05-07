@@ -75,3 +75,10 @@
 - 新建: concepts/sqlalchemy-orm-basics.md
 - 新建: concepts/linux-proc-filesystem.md
 - 更新: index.md
+
+## [2026-05-07] ingest | 用户的「后端开发学习笔记」
+- 来源: 用户自写的整理笔记（从豆包对话提炼）
+- raw: raw/articles/user-backend-study-notes.md
+- 更新: concepts/fastapi-basics.md（补充 HTTP 餐厅模型、状态码、CRUD 四句话、路由可视化、更完整 API 示例）
+- 更新: concepts/sqlalchemy-orm-basics.md（补充持久化说明、nullable/index 字段约束、自动建表、创建/删除用户、CRUD 对照表、MySQL 换用指引）
+- 更新: index.md
