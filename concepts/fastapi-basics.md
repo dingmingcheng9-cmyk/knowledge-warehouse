@@ -1,10 +1,10 @@
 ---
 title: FastAPI 后端基础
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-05-08
 type: concept
 tags: [tool, framework, tutorial, devops]
-sources: [raw/articles/fastapi-backend-doubao-conversation.md, raw/articles/user-backend-study-notes.md]
+sources: [raw/articles/fastapi-backend-doubao-conversation.md, raw/articles/user-backend-study-notes.md, raw/doubao-source-jwt-conversation.md, raw/user-backend-jwt-conversation.md]
 confidence: high
 ---
 
@@ -196,3 +196,4 @@ curl -s -X POST "http://localhost:8000/users?name=小明&age=25"
 
 - [[python-environment-management]] — Python 虚拟环境管理
 - [[sqlalchemy-orm-basics]] — SQLAlchemy ORM 数据库操作
+- [[jwt-authentication]] — JWT 认证与密码哈希（登录/注册/鉴权）

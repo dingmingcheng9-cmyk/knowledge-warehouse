@@ -2,7 +2,7 @@
 
 > 知识库目录。每个页面按类型归类，附带一行摘要。
 > 提问前先查阅此处，快速找到相关页面。
-| 最后更新: 2026-05-07 | 总页数: 15
+| 最后更新: 2026-05-08 | 总页数: 17
 
 ## Entities（实体）
 
@@ -22,6 +22,8 @@
 - [[mere-exposure-effect]] — 曝光效应与第一印象：反复接触如何改变对人判断的三个心理学效应
 - [[python-environment-management]] — Python 运行方式对比：uv / pip / venv / 系统 Python 的适用场景与判断口诀
 - [[sqlalchemy-orm-basics]] — SQLAlchemy ORM 数据库操作：ORM 概念、SQLite 集成、模型定义、CRUD 查询
+- [[shell-source-command]] — Shell source 命令：在当前进程执行脚本、激活虚拟环境、vs 子进程对比
+- [[jwt-authentication]] — JWT 认证与密码哈希：bcrypt 密码哈希、盐、JWT 签名验签、FastAPI JWT 实现
 - [[time-exclusivity-and-efficiency]] — 时间的排他性与效率性：选择即放弃，单位时间产出决定差距
 
 ## Comparisons（对比）
