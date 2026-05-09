@@ -99,3 +99,10 @@
 - 新建: concepts/cpu-threads-and-processes.md（CPU线程/进程/核心/超线程/时间片调度）
 - 新建: concepts/os-handles-and-resource-management.md（句柄概念/句柄泄漏/Windows vs Linux资源管理对比）
 - 更新: index.md
+
+## [2026-05-09] ingest | 后端学习第5课 — PUT 更新接口（完整 CRUD）
+- 来源: https://www.doubao.com/thread/w4a20f3697fb0bb2c
+- raw: raw/articles/user-backend-put-update.md
+- 更新: concepts/fastapi-basics.md（新增「PUT 更新接口」章节、完整 CRUD 一览表、测试命令）
+- 更新: concepts/sqlalchemy-orm-basics.md（新增「更新用户」章节、CRUD 对照表填上 Update 行）
+- 更新: index.md

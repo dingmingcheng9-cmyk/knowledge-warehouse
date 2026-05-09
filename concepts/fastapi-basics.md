@@ -1,10 +1,10 @@
 ---
 title: FastAPI 后端基础
 created: 2026-05-07
-updated: 2026-05-08
+updated: 2026-05-09
 type: concept
 tags: [tool, framework, tutorial, devops]
-sources: [raw/articles/fastapi-backend-doubao-conversation.md, raw/articles/user-backend-study-notes.md, raw/doubao-source-jwt-conversation.md, raw/user-backend-jwt-conversation.md]
+sources: [raw/articles/fastapi-backend-doubao-conversation.md, raw/articles/user-backend-study-notes.md, raw/doubao-source-jwt-conversation.md, raw/user-backend-jwt-conversation.md, raw/articles/user-backend-put-update.md]
 confidence: high
 ---
 
@@ -191,6 +191,70 @@ curl -s -X POST "http://localhost:8000/users?name=小明&age=25"
 ```
 
 `curl` 是终端里的浏览器，用于在不打开浏览器的情况下测试接口。
+
+## PUT 更新接口（完整 CRUD）
+
+在第4课 JWT 认证 + 第2课 SQLAlchemy ORM 的基础上，第5课实现了 PUT 更新接口，至此 CRUD（增删查改）全部完成。
+
+### PUT 更新代码模式
+
+```python
+@app.put("/users/{user_id}")
+def update_user(user_id: int, name: str, age: int):
+    \"\"\"更新用户的 name 和 age\"\"\"
+    db = Session(engine)
+    user = db.query(User).filter(User.id == user_id).first()
+    if not user:
+        db.close()
+        raise HTTPException(status_code=404, detail="用户不存在")
+
+    # 修改字段值
+    user.name = name
+    user.age = age
+    db.commit()
+    db.refresh(user)
+    db.close()
+
+    return {
+        "id": user.id,
+        "name": user.name,
+        "age": user.age,
+        "message": "更新成功"
+    }
+```
+
+**三步曲：查 → 改 → 提交：**
+1. `db.query().filter().first()` — 先查出记录
+2. 修改字段值（Python 对象的属性赋值）
+3. `db.commit()` 提交事务 + `db.refresh()` 刷新到最新状态
+
+⚠️ 如果 `user` 不存在，返回 `404` 而不是报 500 服务器错误。
+
+### 完整 CRUD 一览
+
+| 操作 | 方法 | 路径 | 代码模式 |
+|------|------|------|---------|
+| **Create** 创建 | POST | /register | 查重 → 哈希密码 → 创建 → commit |
+| **Read** 查询 | GET | /users, /users/{id} | query + filter → .all() 或 .first() |
+| **Update** 更新 | PUT | /users/{id} | 查 → 改字段 → commit + refresh |
+| **Delete** 删除 | DELETE | /users/{id} | 查 → delete → commit |
+
+### 测试 PUT 接口
+
+```bash
+# 先注册一个用户
+curl -s -X POST "http://localhost:8002/register?name=test_put&age=20&password=123"
+
+# PUT 更新
+curl -s -X PUT "http://localhost:8002/users/2?name=test_put_updated&age=99"
+# → {"id":2,"name":"test_put_updated","age":99,"message":"更新成功"}
+
+# 验证 GET
+curl -s "http://localhost:8002/users/2"
+# → {"id":2,"name":"test_put_updated","age":99}
+```
+
+项目路径：`/root/learn-backend/`，当前端口 8002。
 
 ## 相关页面
 

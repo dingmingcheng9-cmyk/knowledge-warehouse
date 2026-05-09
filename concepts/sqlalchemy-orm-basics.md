@@ -1,10 +1,10 @@
 ---
 title: SQLAlchemy ORM 数据库操作
 created: 2026-05-07
-updated: 2026-05-07
+updated: 2026-05-09
 type: concept
 tags: [tool, framework, tutorial, devops]
-sources: [raw/articles/fastapi-backend-doubao-conversation.md, raw/articles/user-backend-study-notes.md, raw/articles/proc-orm-doubao-conversation.md]
+sources: [raw/articles/fastapi-backend-doubao-conversation.md, raw/articles/user-backend-study-notes.md, raw/articles/proc-orm-doubao-conversation.md, raw/articles/user-backend-put-update.md]
 confidence: high
 ---
 
@@ -157,6 +157,36 @@ def delete_user(user_id: int):
     return {"message": f"用户 {user_id} 已删除"}
 ```
 
+### 更新用户
+
+```python
+@app.put("/users/{user_id}")
+def update_user(user_id: int, name: str, age: int):
+    db = Session(engine)
+    user = db.query(User).filter(User.id == user_id).first()
+    if not user:
+        db.close()
+        raise HTTPException(status_code=404, detail="用户不存在")
+
+    # 修改字段值
+    user.name = name
+    user.age = age
+    db.commit()           # 提交事务，将改动写回数据库
+    db.refresh(user)      # 从数据库重新加载最新状态
+    db.close()
+
+    return {
+        "id": user.id,
+        "name": user.name,
+        "age": user.age,
+        "message": "更新成功"
+    }
+```
+
+**更新流程：** `db.query().filter().first()` → 修改属性 → `db.commit()` → `db.refresh()`
+
+❗ **关键区别：** 更新不需要 `db.add()`，因为 `user` 已经是数据库中的记录对象。ORM 自动追踪属性变更，`db.commit()` 时会把所有改动写回数据库。
+
 ### CRUD 操作对照表
 
 | 操作 | HTTP 方法 | API 路径 | 数据库操作 |
@@ -164,7 +194,7 @@ def delete_user(user_id: int):
 | Create | POST | `/users` | `db.add()` → `db.commit()` |
 | Read (全部) | GET | `/users` | `db.query(User).all()` |
 | Read (单个) | GET | `/users/{id}` | `.filter(User.id == id).first()` |
-| Update | PUT | 待学 | `.filter(...).update(...)` |
+| Update | PUT | `/users/{id}` | 查 → 改字段 → `db.commit()` + `db.refresh()` |
 | Delete | DELETE | `/users/{id}` | `db.delete(user)` → `db.commit()` |
 
 ### 换用 MySQL
