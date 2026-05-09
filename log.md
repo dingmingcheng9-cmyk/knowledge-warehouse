@@ -92,3 +92,10 @@
 - 新建: concepts/jwt-authentication.md（密码哈希/bcrypt/盐、JWT 签名/验签、FastAPI JWT 实现）
 - 更新: concepts/fastapi-basics.md（补充 JWT 相关来源 + 添加 jwt-authentication 链接）
 - 更新: index.md
+
+## [2026-05-08] ingest | 豆包对话：CPU线程与多任务 + 句柄与系统资源管理
+- 来源: https://www.doubao.com/thread/ace6be76a457c
+- raw: raw/doubao-cpu-threads-handles-conversation.md（13轮对话，CPU线程/超线程/多任务/句柄/Windows vs Linux）
+- 新建: concepts/cpu-threads-and-processes.md（CPU线程/进程/核心/超线程/时间片调度）
+- 新建: concepts/os-handles-and-resource-management.md（句柄概念/句柄泄漏/Windows vs Linux资源管理对比）
+- 更新: index.md

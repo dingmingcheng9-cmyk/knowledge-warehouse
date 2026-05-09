@@ -2,7 +2,7 @@
 
 > 知识库目录。每个页面按类型归类，附带一行摘要。
 > 提问前先查阅此处，快速找到相关页面。
-| 最后更新: 2026-05-08 | 总页数: 17
+| 最后更新: 2026-05-08 | 总页数: 19
 
 ## Entities（实体）
 
@@ -14,12 +14,14 @@
 - [[china-home-broadband-public-ip]] — 国内家用宽带公网 IP 现状：CGNAT、移动不给免费、替代方案对比
 - [[china-icp-beian]] — 中国网站 ICP 备案指南：个人备案 vs 企业备案条件、材料、限制
 - [[cloudflare-tunnel]] — Cloudflare Tunnel 内网穿透：永久免费、不用公网IP、自动HTTPS、Hermes 适用场景
+- [[cpu-threads-and-processes]] — CPU 线程与多任务运行原理：线程/进程/核心/超线程概念、时间片轮转多任务调度
 - [[docker-container-basics]] — Docker run 常用参数：端口映射、目录挂载、环境变量、开机自启、commit vs save；含 commit 打包范围详解
 - [[domain-name-basics]] — 域名基础知识：TLD/DNS/注册续费/ICANN&CNNIC/域名vs商标/优质域名
 - [[fastapi-basics]] — FastAPI 后端框架核心概念：环境搭建、路由三要素（HTTP方法/URL/函数）、路径参数、curl测试
 - [[hermes-agent-commands]] — Hermes Agent Ubuntu 指令集速查：CLI 命令、斜杠命令、进阶功能
 - [[linux-proc-filesystem]] — Linux /proc 虚拟文件系统：查看进程、硬件信息、内核参数、系统状态
 - [[mere-exposure-effect]] — 曝光效应与第一印象：反复接触如何改变对人判断的三个心理学效应
+- [[os-handles-and-resource-management]] — 句柄与系统资源管理：句柄泄漏、Windows vs Linux 资源管理对比
 - [[python-environment-management]] — Python 运行方式对比：uv / pip / venv / 系统 Python 的适用场景与判断口诀
 - [[sqlalchemy-orm-basics]] — SQLAlchemy ORM 数据库操作：ORM 概念、SQLite 集成、模型定义、CRUD 查询
 - [[shell-source-command]] — Shell source 命令：在当前进程执行脚本、激活虚拟环境、vs 子进程对比
