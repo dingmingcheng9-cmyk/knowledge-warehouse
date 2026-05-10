@@ -116,3 +116,8 @@
 - 更新: index.md
 - 新建: concepts/software-architecture-download.md — 软件下载页架构与格式：x64/arm64/x86、.msi/.exe
 - 更新: index.md（总页数 23）
+
+## [2026-05-10] create | Hermes Agent 技能总览
+- raw: raw/articles/hermes-agent-skills-list.md
+- 新建: concepts/hermes-agent-skills.md — 全部 90+ 内置技能分类整理
+- 更新: index.md
