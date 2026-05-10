@@ -106,3 +106,13 @@
 - 更新: concepts/fastapi-basics.md（新增「PUT 更新接口」章节、完整 CRUD 一览表、测试命令）
 - 更新: concepts/sqlalchemy-orm-basics.md（新增「更新用户」章节、CRUD 对照表填上 Update 行）
 - 更新: index.md
+
+## [2026-05-10] ingest | 解释磁盘空间预留 + Samba 与 Alist 对比
+- 来源: https://www.doubao.com/thread/w67e3206676d9de73
+- raw: raw/articles/doubao-disk-reserve-samba-conversation.md
+- 新建: concepts/linux-disk-reserved-blocks.md — Linux 5% root 保留块机制
+- 新建: concepts/samba-file-sharing.md — Samba 文件共享介绍
+- 新建: comparisons/samba-vs-alist.md — Samba 与 Alist 对比
+- 更新: index.md
+- 新建: concepts/software-architecture-download.md — 软件下载页架构与格式：x64/arm64/x86、.msi/.exe
+- 更新: index.md（总页数 23）

@@ -2,7 +2,7 @@
 
 > 知识库目录。每个页面按类型归类，附带一行摘要。
 > 提问前先查阅此处，快速找到相关页面。
-> 最后更新: 2026-05-09 | 总页数: 19
+> 最后更新: 2026-05-10 | 总页数: 23
 
 ## Entities（实体）
 
@@ -33,3 +33,8 @@
 - [[hdd-vs-ssd-vs-glass-storage]] — HDD、SSD、玻璃存储三种存储技术的底层原理、速度、寿命、价格、适用场景横向对比
 
 ## Queries（问答存档）
+
+- [[linux-disk-reserved-blocks]] — Linux 文件系统 root 保留块（5% reserved blocks）机制详解
+- [[samba-file-sharing]] — Samba 文件共享：让 Linux 支持 Windows 网上邻居
+- [[samba-vs-alist]] — Samba 与 Alist 定位对比：不冲突的互补文件共享方案
+- [[software-architecture-download]] — 软件下载页架构与格式解析：x64/arm64/x86、.msi vs .exe
