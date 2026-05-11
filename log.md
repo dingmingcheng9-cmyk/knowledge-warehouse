@@ -49,3 +49,96 @@
 - raw: raw/mere-exposure-effect-doubao-conversation.md（追加主题二）
 - 新建: concepts/time-exclusivity-and-efficiency.md
 - 更新: index.md
+
+## [2026-05-06] ingest | 豆包对话：HDD vs SSD vs 玻璃存储技术对比
+- 来源: https://www.doubao.com/thread/aa4b7875589fe
+- raw: raw/hdd-ssd-glass-doubao-conversation.md
+- 新建: comparisons/hdd-vs-ssd-vs-glass-storage.md
+- 更新: index.md
+
+## [2026-05-06] ingest | 豆包对话：Cloudflare Tunnel + 域名基础 + ICP 备案
+- 来源: https://www.doubao.com/thread/a0219e5411382
+- 30轮问答，涵盖 Cloudflare Tunnel 内网穿透、公网IP现状、域名vs商标、TLD、DNS、ICANN/CNNIC、注册续费、ICP备案
+- raw: raw/articles/cloudflare-tunnel-domains-doubao-conversation.md
+- 新建: concepts/cloudflare-tunnel.md
+- 新建: concepts/domain-name-basics.md
+- 新建: concepts/china-icp-beian.md
+- 新建: concepts/china-home-broadband-public-ip.md
+- 更新: index.md
+
+## [2026-05-07] ingest | 豆包对话：FastAPI 环境搭建 + ORM 原理 + /proc 文件系统
+- 来源: https://www.doubao.com/thread/w4ca1d3395d9f845c
+- 来源: https://www.doubao.com/thread/wb7331b7dfc9ae6df
+- raw: raw/articles/fastapi-backend-doubao-conversation.md（FastAPI 入门教学，34 轮对话）
+- raw: raw/articles/proc-orm-doubao-conversation.md（/proc + ORM 详解，8 轮对话）
+- 新建: concepts/fastapi-basics.md
+- 新建: concepts/sqlalchemy-orm-basics.md
+- 新建: concepts/linux-proc-filesystem.md
+- 更新: index.md
+
+## [2026-05-07] ingest | 用户的「后端开发学习笔记」
+- 来源: 用户自写的整理笔记（从豆包对话提炼）
+- raw: raw/articles/user-backend-study-notes.md
+- 更新: concepts/fastapi-basics.md（补充 HTTP 餐厅模型、状态码、CRUD 四句话、路由可视化、更完整 API 示例）
+- 更新: concepts/sqlalchemy-orm-basics.md（补充持久化说明、nullable/index 字段约束、自动建表、创建/删除用户、CRUD 对照表、MySQL 换用指引）
+- 更新: index.md
+
+## [2026-05-08] ingest | 豆包对话：source 命令 + JWT 认证原理
+- 来源: https://www.doubao.com/thread/wc75fec6254908835
+- raw: raw/doubao-source-jwt-conversation.md（44轮对话，涵盖 source 命令、密码哈希、JWT 认证全流程）
+- 来源: 用户 CLI 对话备份（后端学习第4课 JWT 认证实战）
+- raw: raw/user-backend-jwt-conversation.md（JWT 认证 FastAPI 实现 + bcrypt 兼容性问题）
+- 新建: concepts/shell-source-command.md（Linux source 命令详解）
+- 新建: concepts/jwt-authentication.md（密码哈希/bcrypt/盐、JWT 签名/验签、FastAPI JWT 实现）
+- 更新: concepts/fastapi-basics.md（补充 JWT 相关来源 + 添加 jwt-authentication 链接）
+- 更新: index.md
+
+## [2026-05-08] ingest | 豆包对话：CPU线程与多任务 + 句柄与系统资源管理
+- 来源: https://www.doubao.com/thread/ace6be76a457c
+- raw: raw/doubao-cpu-threads-handles-conversation.md（13轮对话，CPU线程/超线程/多任务/句柄/Windows vs Linux）
+- 新建: concepts/cpu-threads-and-processes.md（CPU线程/进程/核心/超线程/时间片调度）
+- 新建: concepts/os-handles-and-resource-management.md（句柄概念/句柄泄漏/Windows vs Linux资源管理对比）
+- 更新: index.md
+
+## [2026-05-09] ingest | 后端学习第5课 — PUT 更新接口（完整 CRUD）
+- 来源: https://www.doubao.com/thread/w4a20f3697fb0bb2c
+- raw: raw/articles/user-backend-put-update.md
+- 更新: concepts/fastapi-basics.md（新增「PUT 更新接口」章节、完整 CRUD 一览表、测试命令）
+- 更新: concepts/sqlalchemy-orm-basics.md（新增「更新用户」章节、CRUD 对照表填上 Update 行）
+- 更新: index.md
+
+## [2026-05-10] ingest | 解释磁盘空间预留 + Samba 与 Alist 对比
+- 来源: https://www.doubao.com/thread/w67e3206676d9de73
+- raw: raw/articles/doubao-disk-reserve-samba-conversation.md
+- 新建: concepts/linux-disk-reserved-blocks.md — Linux 5% root 保留块机制
+- 新建: concepts/samba-file-sharing.md — Samba 文件共享介绍
+- 新建: comparisons/samba-vs-alist.md — Samba 与 Alist 对比
+- 更新: index.md
+- 新建: concepts/software-architecture-download.md — 软件下载页架构与格式：x64/arm64/x86、.msi/.exe
+- 更新: index.md（总页数 23）
+
+## [2026-05-10] create | Hermes Agent 技能总览
+- raw: raw/articles/hermes-agent-skills-list.md
+- 新建: concepts/hermes-agent-skills.md — 全部 90+ 内置技能分类整理
+- 更新: index.md
+
+## [2026-05-11] ingest | 豆包对话：浙江财经大学东方学院投资 + 通信专利SEP商业模式
+- 来源: https://www.doubao.com/thread/a094d8f8b8552
+- 标题: 浙江财经大学东方学院总投资建设金额
+- raw: raw/articles/college-investment-patent-business-doubao-conversation.md
+- 新建: concepts/independent-college-economics.md（独立学院投资与盈利模式）
+- 新建: concepts/sep-patent-business-model.md（标准必要专利SEP商业模式）
+- 更新: index.md
+- 新建: concepts/sep-patent-business-model.md（标准必要专利SEP商业模式）
+- 更新: index.md
+
+## [2026-05-11] ingest | 豆包对话：互联网现金奶牛 + CUDA垄断 + 闻泰ST分析
+- 来源: https://www.doubao.com/thread/ab354da279854
+- 标题: 腾讯、字节、阿里现金奶牛对比
+- raw: raw/articles/tech-cash-cows-cuda-wingtech-doubao-conversation.md
+- 新建: comparisons/china-internet-cash-cows.md（中国互联网五大现金奶牛对比）
+- 新建: concepts/china-cloud-market.md（中国云市场格局）
+- 新建: concepts/cuda-ecosystem-monopoly.md（CUDA生态与垄断破局）
+- 新建: entities/linus-torvalds.md（林纳斯·托瓦兹）
+- 新建: queries/wingtech-st-analysis.md（闻泰科技ST分析）
+- 更新: index.md

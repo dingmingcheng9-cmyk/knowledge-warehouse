@@ -10,23 +10,17 @@ confidence: high
 
 # Hermes Agent 指令集（Ubuntu）
 
-
-hermes agent国内安装镜像：
-curl -fsSL https://res1.hermesagent.org.cn/install.sh | bash
-hermes agent绑定飞书之前，要先下载一个库，这个库直接影响飞书的启动,以下是安装指令：
-pip install lark-oapi
-
 Hermes Agent 是 Nous Research 开发的开源 AI Agent 框架，在 Ubuntu 终端中通过 `hermes` 命令使用。以下是常用指令速查。
 
 ## CLI 命令
 
 ### 核心管理
-| 指令              | 说明               |
-| --------------- | ---------------- |
-| `hermes`        | 启动 TUI 交互界面      |
-| `hermes setup`  | 配置向导（初始化/修改全局配置） |
-| `hermes doctor` | 检查依赖和配置健康        |
-| `hermes status` | 查看组件状态           |
+| 指令 | 说明 |
+|------|------|
+| `hermes` | 启动 TUI 交互界面 |
+| `hermes setup` | 配置向导（初始化/修改全局配置） |
+| `hermes doctor` | 检查依赖和配置健康 |
+| `hermes status` | 查看组件状态 |
 
 ### 对话
 | 指令 | 说明 |
@@ -37,14 +31,14 @@ Hermes Agent 是 Nous Research 开发的开源 AI Agent 框架，在 Ubuntu 终�
 | `hermes --resume SESSION` | 恢复指定会话 |
 
 ### 配置
-| 指令                          | 说明                       |
-| --------------------------- | ------------------------ |
-| `hermes config`             | 查看当前配置                   |
-| `hermes config edit`        | 编辑 config.yaml           |
-| `hermes config set KEY VAL` | 设置配置值                    |
-| `hermes config list`        | 显示所有生效配置项                |
-| `hermes model`              | 交互式模型/提供商选择              |
-| `hermes auth`               | 管理 API 凭证（添加/列出/删除/策略设置） |
+| 指令 | 说明 |
+|------|------|
+| `hermes config` | 查看当前配置 |
+| `hermes config edit` | 编辑 config.yaml |
+| `hermes config set KEY VAL` | 设置配置值 |
+| `hermes config list` | 显示所有生效配置项 |
+| `hermes model` | 交互式模型/提供商选择 |
+| `hermes auth` | 管理 API 凭证（添加/列出/删除/策略设置） |
 
 ### 认证 & 凭证
 | 指令 | 说明 |
@@ -84,11 +78,11 @@ Hermes Agent 是 Nous Research 开发的开源 AI Agent 框架，在 Ubuntu 终�
 | `hermes sessions prune` | 清理旧会话 |
 
 ### 网关（消息平台）
-| 指令                                  | 说明       |
-| ----------------------------------- | -------- |
-| `hermes gateway run`                | 启动网关（前台） |
-| `hermes gateway install`            | 安装为后台服务  |
-| `hermes gateway start/stop/restart` | 控制网关服务   |
+| 指令 | 说明 |
+|------|------|
+| `hermes gateway run` | 启动网关（前台） |
+| `hermes gateway install` | 安装为后台服务 |
+| `hermes gateway start/stop/restart` | 控制网关服务 |
 
 ### 定时任务
 | 指令 | 说明 |
