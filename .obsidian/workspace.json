@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "7915f4361eb4219d",
+        "id": "0c8ed988f1a37253",
         "type": "tabs",
         "children": [
           {
-            "id": "0283d6145d1d1f86",
+            "id": "d80b0de3d1a4c5f1",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "type": "markdown",
+              "state": {
+                "file": "concepts/jwt-authentication.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "jwt-authentication"
             }
           }
         ]
@@ -49,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "密钥",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,7 +74,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -190,15 +195,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0283d6145d1d1f86",
+  "active": "d80b0de3d1a4c5f1",
   "lastOpenFiles": [
     "concepts/hermes-agent-commands.md",
+    "raw/doubao-source-jwt-conversation.md",
+    "raw/baota-docker-doubao-conversation.md",
+    "concepts/docker-container-basics.md",
     "raw/articles/fastapi-backend-doubao-conversation.md",
     "index.md",
     "concepts/cloudflare-tunnel.md",
     "concepts/cpu-threads-and-processes.md",
     "concepts/cuda-ecosystem-monopoly.md",
-    "concepts/docker-container-basics.md",
     "concepts/fastapi-basics.md",
     "concepts/domain-name-basics.md",
     "concepts/hermes-agent-skills.md",
@@ -209,7 +216,6 @@
     "raw/articles/college-investment-patent-business-doubao-conversation.md",
     "raw/articles/user-backend-put-update.md",
     "raw/doubao-cpu-threads-handles-conversation.md",
-    "raw/doubao-source-jwt-conversation.md",
     "raw/hdd-ssd-glass-doubao-conversation.md",
     "raw/mere-exposure-effect-doubao-conversation.md",
     "raw/hermes-uv-env-doubao-conversation.md",
@@ -217,7 +223,6 @@
     "raw/docker-commit-scope-doubao-conversation.md",
     "concepts/mere-exposure-effect.md",
     "concepts/python-environment-management.md",
-    "raw/baota-docker-doubao-conversation.md",
     "未命名.canvas",
     "未命名 1.canvas",
     "未命名.base"
