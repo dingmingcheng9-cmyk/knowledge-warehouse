@@ -121,3 +121,24 @@
 - raw: raw/articles/hermes-agent-skills-list.md
 - 新建: concepts/hermes-agent-skills.md — 全部 90+ 内置技能分类整理
 - 更新: index.md
+
+## [2026-05-11] ingest | 豆包对话：浙江财经大学东方学院投资 + 通信专利SEP商业模式
+- 来源: https://www.doubao.com/thread/a094d8f8b8552
+- 标题: 浙江财经大学东方学院总投资建设金额
+- raw: raw/articles/college-investment-patent-business-doubao-conversation.md
+- 新建: concepts/independent-college-economics.md（独立学院投资与盈利模式）
+- 新建: concepts/sep-patent-business-model.md（标准必要专利SEP商业模式）
+- 更新: index.md
+- 新建: concepts/sep-patent-business-model.md（标准必要专利SEP商业模式）
+- 更新: index.md
+
+## [2026-05-11] ingest | 豆包对话：互联网现金奶牛 + CUDA垄断 + 闻泰ST分析
+- 来源: https://www.doubao.com/thread/ab354da279854
+- 标题: 腾讯、字节、阿里现金奶牛对比
+- raw: raw/articles/tech-cash-cows-cuda-wingtech-doubao-conversation.md
+- 新建: comparisons/china-internet-cash-cows.md（中国互联网五大现金奶牛对比）
+- 新建: concepts/china-cloud-market.md（中国云市场格局）
+- 新建: concepts/cuda-ecosystem-monopoly.md（CUDA生态与垄断破局）
+- 新建: entities/linus-torvalds.md（林纳斯·托瓦兹）
+- 新建: queries/wingtech-st-analysis.md（闻泰科技ST分析）
+- 更新: index.md
