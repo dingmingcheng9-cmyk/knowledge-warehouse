@@ -1,10 +1,10 @@
 ---
 title: FastAPI 后端基础
 created: 2026-05-07
-updated: 2026-05-09
+updated: 2026-05-11
 type: concept
 tags: [tool, framework, tutorial, devops]
-sources: [raw/articles/fastapi-backend-doubao-conversation.md, raw/articles/user-backend-study-notes.md, raw/doubao-source-jwt-conversation.md, raw/user-backend-jwt-conversation.md, raw/articles/user-backend-put-update.md]
+sources: [raw/articles/fastapi-backend-doubao-conversation.md, raw/articles/user-backend-study-notes.md, raw/doubao-source-jwt-conversation.md, raw/user-backend-jwt-conversation.md, raw/articles/user-backend-put-update.md, raw/articles/l8-env-config-teaching-backup.md, raw/articles/jwt-hash-env-doubao-conversation.md]
 confidence: high
 ---
 
@@ -255,6 +255,118 @@ curl -s "http://localhost:8002/users/2"
 ```
 
 项目路径：`/root/learn-backend/`，当前端口 8002。
+
+## 环境变量与配置分离（pydantic-settings）
+
+### 问题：硬编码的安全隐患
+
+项目中敏感配置（SECRET_KEY、DATABASE_URL）直接写在 main.py 里：
+
+```python
+SECRET_KEY = "my-super-secret-key-change-in-production"  # ❌ 密钥暴露在代码中
+```
+
+如果代码提交到 GitHub，任何人都能看到 SECRET_KEY，可以伪造 JWT 令牌。
+
+### 解决方案：pydantic-settings + .env 文件
+
+**安装：**
+```bash
+pip install pydantic-settings
+# 自动安装 python-dotenv 作为依赖
+```
+
+**Step 1: 创建 .env 文件**
+```ini
+DATABASE_URL=sqlite:///./app.db
+SECRET_KEY=my-super-secret-key-change-in-production
+ALGORITHM=HS256
+ACCESS_TOKEN_EXPIRE_MINUTES=30
+```
+
+**.env 文件不上传到 GitHub（见下文的 .gitignore），只存在服务器本地。**
+
+**Step 2: 创建 config.py**
+```python
+from pydantic_settings import BaseSettings
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent
+
+class Settings(BaseSettings):
+    DATABASE_URL: str = "sqlite:///./app.db"
+    SECRET_KEY: str = "change-me-in-production"
+    ALGORITHM: str = "HS256"
+    ACCESS_TOKEN_EXPIRE_MINUTES: int = 30
+
+    model_config = {"env_file": BASE_DIR / ".env"}
+
+settings = Settings()
+```
+
+关键点：
+- `class Settings(BaseSettings)` — 继承 pydantic-settings，自动从环境变量 + .env 加载
+- `ACCESS_TOKEN_EXPIRE_MINUTES: int` — 类型注解；如果 .env 写了 abc，启动就报 `ValidationError`（快速失败原则）
+- `model_config` — pydantic v2 配置方式，指定 .env 文件路径
+- `BASE_DIR / ".env"` — pathlib 路径拼接，跨平台兼容
+- `settings = Settings()` — 全局单例，只创建一次到处引用
+
+**Step 3: 在 main.py 中使用**
+```python
+from config import settings
+
+DATABASE_URL = settings.DATABASE_URL
+SECRET_KEY = settings.SECRET_KEY
+ALGORITHM = settings.ALGORITHM
+ACCESS_TOKEN_EXPIRE_MINUTES = settings.ACCESS_TOKEN_EXPIRE_MINUTES
+```
+
+**Step 4: 创建 .gitignore**
+```gitignore
+# 环境变量（存密钥、数据库地址等敏感信息）
+.env
+
+# Python 虚拟环境
+venv/
+
+# SQLite 数据库文件
+*.db
+
+# Python 缓存
+__pycache__/
+*.pyc
+```
+
+### main.py vs config.py 分工
+
+| 文件 | 职责 | 类比 |
+|------|------|------|
+| `.env` | 存敏感配置值 | 密码本 |
+| `config.py` | 桥梁：读取 .env 并转换为 Python 对象 | 翻译官 |
+| `main.py` | 使用 config.settings 拿配置 | 指挥官 |
+
+**用户总结标准答案：**
+> main.py 是项目的总指挥代码，config.py 是连接代码与 .env 文件的桥梁。
+
+### 房子钥匙比喻
+
+- **以前**：钥匙（SECRET_KEY）贴在门上（硬编码在代码里）
+- **现在**：钥匙在口袋里（.env 文件），门口贴着"不能看钥匙"（.gitignore）
+
+### 环境变量优先级
+
+```
+真实环境变量（最高优先级）
+       ↓
+.env 文件（中等优先级）
+       ↓
+代码默认值（最低优先级）
+```
+
+可以临时覆盖配置（不改 .env）：
+```bash
+ACCESS_TOKEN_EXPIRE_MINUTES=5 uvicorn main:app --host 0.0.0.0 --port 9090
+```
 
 ## 相关页面
 

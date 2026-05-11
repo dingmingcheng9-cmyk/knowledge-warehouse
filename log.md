@@ -142,3 +142,12 @@
 - 新建: entities/linus-torvalds.md（林纳斯·托瓦兹）
 - 新建: queries/wingtech-st-analysis.md（闻泰科技ST分析）
 - 更新: index.md
+
+## [2026-05-11] ingest | 豆包对话 + 教学备份：JWT哈希机制 + 环境变量配置分离
+- 来源: https://www.doubao.com/thread/w73148d3000cccd8e
+- 标题: 解释 JWT 哈希原理
+- raw: raw/articles/jwt-hash-env-doubao-conversation.md（豆包对话）
+- raw: raw/articles/l8-env-config-teaching-backup.md（本地教学备份）
+- 更新: concepts/jwt-authentication.md（添加 JWT 签名内部机制详解章节）
+- 更新: concepts/fastapi-basics.md（添加环境变量配置分离 L8 章节）
+- 更新: index.md
