@@ -92,13 +92,13 @@ Hermes Agent 是 Nous Research 开发的开源 AI Agent 框架，在 Ubuntu 终�
 | `hermes cron remove ID` | 删除任务 |
 
 ### 诊断 & 维护
-| 指令 | 说明 |
-|------|------|
-| `hermes doctor [--fix]` | 一键诊断配置和系统依赖 |
-| `hermes logs` | 查看/跟踪代理、网关等日志文件 |
-| `hermes update` | 更新到最新版本 |
-| `hermes backup` | 备份整个 Hermes 主目录（ZIP） |
-| `hermes import FILE` | 从 ZIP 恢复配置与数据 |
+| 指令                      | 说明                   |
+| ----------------------- | -------------------- |
+| `hermes doctor [--fix]` | 一键诊断配置和系统依赖          |
+| `hermes logs`           | 查看/跟踪代理、网关等日志文件      |
+| `hermes update`         | 更新到最新版本              |
+| `hermes backup`         | 备份整个 Hermes 主目录（ZIP） |
+| `hermes import FILE`    | 从 ZIP 恢复配置与数据        |
 
 ### 高级应用
 | 指令 | 说明 |

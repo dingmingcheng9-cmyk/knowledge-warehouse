@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "concepts/python-environment-management.md",
+                "file": "concepts/hermes-agent-commands.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "python-environment-management"
+              "title": "hermes-agent-commands"
             }
           }
         ]
@@ -196,6 +196,7 @@
   },
   "active": "fc10fff83e87c2bf",
   "lastOpenFiles": [
+    "concepts/python-environment-management.md",
     "concepts/cloudflare-tunnel.md",
     "concepts/hermes-agent-commands.md",
     "raw/articles/l8-env-config-teaching-backup.md",
@@ -222,7 +223,6 @@
     "raw/hdd-ssd-glass-doubao-conversation.md",
     "raw/mere-exposure-effect-doubao-conversation.md",
     "raw/hermes-uv-env-doubao-conversation.md",
-    "concepts/software-architecture-download.md",
     "未命名 1.canvas",
     "未命名.base"
   ]
