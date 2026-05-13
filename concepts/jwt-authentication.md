@@ -1,10 +1,10 @@
 ---
 title: JWT 认证与密码哈希
 created: 2026-05-08
-updated: 2026-05-08
+updated: 2026-05-11
 type: concept
 tags: [framework, tutorial, security, tool]
-sources: [raw/doubao-source-jwt-conversation.md, raw/user-backend-jwt-conversation.md]
+sources: [raw/doubao-source-jwt-conversation.md, raw/user-backend-jwt-conversation.md, raw/articles/jwt-hash-env-doubao-conversation.md]
 confidence: high
 ---
 
@@ -130,6 +130,76 @@ eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiZXhwIjoxNjgwMDB9.zV8sfjV5w...
 | 12-Factor App | ❌ 违反 | ✅ 符合 |
 
 真实安全是分层防御：环境变量 → KMS → 定期轮换 → 多因素认证。
+
+## JWT 签名内部机制详解
+
+### JWT 三段式结构的底层逻辑
+
+```
+JWT = Header . Payload . Signature
+     base64     base64       HMAC-SHA256 结果
+```
+
+### Header + Payload 是明文
+
+前两部分只是 **Base64 编码**，不是加密。任何人都可以解码查看：
+```bash
+# 解码 Payload 只需要一行命令
+echo 'eyJzdWIiOiIxIiwiZXhwIjoxNjgwMDB9' | base64 -d
+# → {"sub":"1","exp":168000}
+```
+
+所以 JWT **不能存敏感信息**（如密码、身份证号）在 Payload 中。
+
+### Signature 是哈希签名
+
+签名 = `HMAC-SHA256(base64(Header) + "." + base64(Payload), SECRET_KEY)`
+
+**核心安全属性：**
+1. **唯一密钥 → 唯一签名** — 同一 payload + 同一密钥 → 每次算出的签名完全一样
+2. **雪崩效应** — payload 或密钥哪怕改一个字符，签名就完全不同
+3. **不可逆** — 从签名无法反推出密钥或 payload（哈希的单向性）
+4. **验签 = 重新算一遍** — 服务器把前两段 + 密钥再算一次 HMAC，对比是否一致
+
+用密码学的类比理解：
+```
+密钥是唯一（S） → 原文是确定的 → 哈希值必须是唯一的（确定性算法）
+                    ↓
+但如果密钥未知，试错空间是指数级的（6 位未知 → 10⁶ 种可能，但 HMAC 的雪崩效应让试错无法局部逼近）
+```
+
+更准确的理解：
+```
+哈希算法的雪崩效应 = 输入差一点，输出差亿点
+密钥不变时，相同输入 → 唯一输出（确定性）
+密钥未知时，任何猜测都产生完全不可预测的输出（无规律可循）
+```
+
+### JWT 验签流程（完整版）
+
+```python
+# 1. 服务器从请求头拿到 Token
+token = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIn0.signature_here"
+
+# 2. 分割三段
+header_b64, payload_b64, signature_received = token.split(".")
+
+# 3. 用服务器自己的 SECRET_KEY 重新计算签名
+signature_computed = HMAC_SHA256(
+    f"{header_b64}.{payload_b64}", 
+    SECRET_KEY
+)
+
+# 4. 对比两个签名
+if signature_computed != signature_received:
+    raise HTTPException(status_code=401, detail="Token 无效")
+
+# 5. 通过后解码 payload
+payload = base64_decode(payload_b64)
+user_id = payload["sub"]  # 安全了！因为只有服务器能伪造有效签名
+```
+
+**关键点：** 服务器不需要存储 Token（无状态认证），也不需要每次都查数据库。只需用密钥重新算一次哈希，对比签名就完成验证。这是 JWT 比 Session 更省资源的本质原因。
 
 ## FastAPI JWT 认证实现
 
