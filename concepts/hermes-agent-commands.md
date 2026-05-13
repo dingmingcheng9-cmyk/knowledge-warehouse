@@ -15,12 +15,12 @@ Hermes Agent 是 Nous Research 开发的开源 AI Agent 框架，在 Ubuntu 终�
 ## CLI 命令
 
 ### 核心管理
-| 指令 | 说明 |
-|------|------|
-| `hermes` | 启动 TUI 交互界面 |
-| `hermes setup` | 配置向导（初始化/修改全局配置） |
-| `hermes doctor` | 检查依赖和配置健康 |
-| `hermes status` | 查看组件状态 |
+| 指令              | 说明               |
+| --------------- | ---------------- |
+| `hermes`        | 启动 TUI 交互界面      |
+| `hermes setup`  | 配置向导（初始化/修改全局配置） |
+| `hermes doctor` | 检查依赖和配置健康        |
+| `hermes status` | 查看组件状态           |
 
 ### 对话
 | 指令 | 说明 |
@@ -78,11 +78,11 @@ Hermes Agent 是 Nous Research 开发的开源 AI Agent 框架，在 Ubuntu 终�
 | `hermes sessions prune` | 清理旧会话 |
 
 ### 网关（消息平台）
-| 指令 | 说明 |
-|------|------|
-| `hermes gateway run` | 启动网关（前台） |
-| `hermes gateway install` | 安装为后台服务 |
-| `hermes gateway start/stop/restart` | 控制网关服务 |
+| 指令                                  | 说明       |
+| ----------------------------------- | -------- |
+| `hermes gateway run`                | 启动网关（前台） |
+| `hermes gateway install`            | 安装为后台服务  |
+| `hermes gateway start/stop/restart` | 控制网关服务   |
 
 ### 定时任务
 | 指令 | 说明 |

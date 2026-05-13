@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "0c8ed988f1a37253",
+        "id": "9a47f6f1a0c7e7c6",
         "type": "tabs",
         "children": [
           {
-            "id": "d80b0de3d1a4c5f1",
+            "id": "fc10fff83e87c2bf",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "type": "markdown",
+              "state": {
+                "file": "concepts/python-environment-management.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "python-environment-management"
             }
           }
         ]
@@ -190,17 +194,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8df146a0cabea979",
+  "active": "fc10fff83e87c2bf",
   "lastOpenFiles": [
+    "concepts/cloudflare-tunnel.md",
+    "concepts/hermes-agent-commands.md",
+    "raw/articles/l8-env-config-teaching-backup.md",
+    "raw/articles/jwt-hash-env-doubao-conversation.md",
     "未命名.canvas",
     "concepts/jwt-authentication.md",
-    "concepts/hermes-agent-commands.md",
     "raw/doubao-source-jwt-conversation.md",
     "raw/baota-docker-doubao-conversation.md",
     "concepts/docker-container-basics.md",
     "raw/articles/fastapi-backend-doubao-conversation.md",
     "index.md",
-    "concepts/cloudflare-tunnel.md",
     "concepts/cpu-threads-and-processes.md",
     "concepts/cuda-ecosystem-monopoly.md",
     "concepts/fastapi-basics.md",
@@ -217,7 +223,6 @@
     "raw/mere-exposure-effect-doubao-conversation.md",
     "raw/hermes-uv-env-doubao-conversation.md",
     "concepts/software-architecture-download.md",
-    "raw/docker-commit-scope-doubao-conversation.md",
     "未命名 1.canvas",
     "未命名.base"
   ]
