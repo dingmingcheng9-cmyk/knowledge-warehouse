@@ -151,3 +151,12 @@
 - 更新: concepts/jwt-authentication.md（添加 JWT 签名内部机制详解章节）
 - 更新: concepts/fastapi-basics.md（添加环境变量配置分离 L8 章节）
 - 更新: index.md
+
+## [2026-05-14] ingest | 豆包对话：JumpServer 堡垒机部署方案 & Ubuntu 网络测试 & HTTP 404 分类
+- 来源: https://www.doubao.com/thread/w62b3ec92041e5acf
+- 标题: 查询堡垒机资源占用
+- raw: raw/jumpserver-deployment-doubao-conversation.md
+- 新建: concepts/jumpserver-bastion-deployment.md（JumpServer 资源占用与部署方案）
+- 新建: queries/ubuntu-network-connectivity-test.md（Ubuntu 外网/国际网络连通性测试）
+- 新建: queries/http-404-classification.md（HTTP 404 错误分类与排查思路）
+- 更新: index.md（+3 pages，共 34 页）
