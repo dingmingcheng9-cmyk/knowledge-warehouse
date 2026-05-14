@@ -160,3 +160,14 @@
 - 新建: queries/ubuntu-network-connectivity-test.md（Ubuntu 外网/国际网络连通性测试）
 - 新建: queries/http-404-classification.md（HTTP 404 错误分类与排查思路）
 - 更新: index.md（+3 pages，共 34 页）
+
+## [2026-05-14] ingest | 本地学习笔记综合整理
+- 来源: 本地笔记（知识学习.txt）
+- raw: raw/knowledge-learning-notes.md
+- 新建: concepts/ubuntu-ssh-remote-setup.md（Ubuntu SSH 远程连接配置）
+- 新建: concepts/hermes-cluster-architecture.md（Hermes Cluster 项目架构）
+- 新建: queries/ip-address-query.md（IP 地址查询方法）
+- 更新: concepts/hermes-agent-commands.md（添加 Windows/Ubuntu/Docker 安装指南）
+- 更新: concepts/docker-container-basics.md（添加容器内外查询命令）
+- 更新: concepts/baota-panel-commands.md（添加面板端口管理）
+- 更新: index.md（+4 pages，共 38 页）

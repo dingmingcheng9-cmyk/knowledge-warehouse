@@ -4,7 +4,7 @@ created: 2026-05-02
 updated: 2026-05-02
 type: concept
 tags: [tool, devops, note]
-sources: [raw/baota-docker-doubao-conversation.md]
+sources: [raw/baota-docker-doubao-conversation.md, raw/knowledge-learning-notes.md]
 ---
 
 # 宝塔面板 (Baota/BT Panel) 常用命令
@@ -78,6 +78,25 @@ python tools.pyc stop      # 停止
 bt 9                       # 查看当前面板登录信息
 bt 14                      # 查看面板当前状态
 ```
+
+## 面板端口管理
+
+```bash
+bt status       # 检查运行情况
+bt default      # 查看登录信息（密码仅首次产生）
+
+# 查看/设置面板端口
+cat /www/server/panel/data/port.pl              # 查看当前端口
+echo "22048" > /www/server/panel/data/port.pl   # 设置端口为 22048
+bt 1            # 改完端口后重启面板
+
+# 防火墙放行端口（Ubuntu）
+ufw allow 22048/tcp
+ufw status
+```
+
+面板默认安全入口为随机字符串（如 `e9d6ce01`），每次重启面板都会变。  
+示例访问地址：`https://外网IP:22048/e9d6ce01`
 
 ## 相关概念
 

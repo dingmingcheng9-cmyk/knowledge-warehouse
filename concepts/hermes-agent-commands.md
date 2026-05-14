@@ -1,16 +1,54 @@
 ---
 title: Hermes Agent 指令集（Ubuntu）
 created: 2026-05-03
-updated: 2026-05-03
+updated: 2026-05-14
 type: concept
-tags: [tool, llm, agent, cli, tutorial]
-sources: [raw/articles/deepseek-hermes-agent-commands.md]
+tags: [tool, llm, agent, cli, tutorial, devops]
+sources: [raw/articles/deepseek-hermes-agent-commands.md, raw/knowledge-learning-notes.md]
 confidence: high
 ---
 
 # Hermes Agent 指令集（Ubuntu）
 
 Hermes Agent 是 Nous Research 开发的开源 AI Agent 框架，在 Ubuntu 终端中通过 `hermes` 命令使用。以下是常用指令速查。
+
+## 安装指南
+
+### Windows 安装（需先装 Git）
+
+**沙箱版：**
+```powershell
+# 国内镜像
+irm https://res1.hermesagent.org.cn/install.ps1 | iex
+# 官方
+irm https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.ps1 | iex
+```
+
+**原生版：**
+```powershell
+irm https://res1.hermesagent.org.cn/install.ps1 | iex
+```
+
+### Ubuntu 安装
+
+```bash
+# 1. 安装依赖
+apt update && apt install -y git curl wget
+
+# 2. 设置 pip 国内镜像（可选）
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
+# 3. 一键安装
+curl -fsSL https://res1.hermesagent.org.cn/install.sh | bash        # 国内镜像
+curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash  # 官方
+```
+
+### Docker 容器中启动
+
+```bash
+uv run hermes                  # 终端交互式对话
+uv run hermes gateway          # 启动网关
+```
 
 ## CLI 命令
 
