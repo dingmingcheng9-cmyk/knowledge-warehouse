@@ -101,7 +101,34 @@ docker start 容器名    # 启动已停止容器
 docker exec -it 容器名 /bin/bash  # 进入容器
 docker stop 容器名     # 停止容器
 docker rm 容器名       # 删除容器
+docker rmi 镜像名       # 删除镜像
+
+## 容器内/外查询命令
+
+```bash
+# 容器内查询
+netstat -tlnp     # 查询开放端口
+mount             # 查看挂载目录
+env               # 查看环境变量
+
+# 容器外查询
+docker port 容器名                             # 查看端口映射（没有则不显示）
+docker inspect 容器名 | grep Mounts -A 20      # 查看挂载
+docker inspect 容器名                          # 查看完整配置
+```
+
+## 常用速查
+
+```bash
+docker images          # 查看所有镜像
+docker ps -a           # 查看所有容器
+docker run ...         # 创建+启动容器
+docker start 容器名    # 启动已停止容器
+docker exec -it 容器名 /bin/bash  # 进入容器
+docker stop 容器名     # 停止容器
+docker rm 容器名       # 删除容器
 docker rmi 镜像名      # 删除镜像
+```
 ```
 
 ## 相关概念

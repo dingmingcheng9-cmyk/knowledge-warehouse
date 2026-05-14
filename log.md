@@ -151,3 +151,23 @@
 - 更新: concepts/jwt-authentication.md（添加 JWT 签名内部机制详解章节）
 - 更新: concepts/fastapi-basics.md（添加环境变量配置分离 L8 章节）
 - 更新: index.md
+
+## [2026-05-14] ingest | 豆包对话：JumpServer 堡垒机部署方案 & Ubuntu 网络测试 & HTTP 404 分类
+- 来源: https://www.doubao.com/thread/w62b3ec92041e5acf
+- 标题: 查询堡垒机资源占用
+- raw: raw/jumpserver-deployment-doubao-conversation.md
+- 新建: concepts/jumpserver-bastion-deployment.md（JumpServer 资源占用与部署方案）
+- 新建: queries/ubuntu-network-connectivity-test.md（Ubuntu 外网/国际网络连通性测试）
+- 新建: queries/http-404-classification.md（HTTP 404 错误分类与排查思路）
+- 更新: index.md（+3 pages，共 34 页）
+
+## [2026-05-14] ingest | 本地学习笔记综合整理
+- 来源: 本地笔记（知识学习.txt）
+- raw: raw/knowledge-learning-notes.md
+- 新建: concepts/ubuntu-ssh-remote-setup.md（Ubuntu SSH 远程连接配置）
+- 新建: concepts/hermes-cluster-architecture.md（Hermes Cluster 项目架构）
+- 新建: queries/ip-address-query.md（IP 地址查询方法）
+- 更新: concepts/hermes-agent-commands.md（添加 Windows/Ubuntu/Docker 安装指南）
+- 更新: concepts/docker-container-basics.md（添加容器内外查询命令）
+- 更新: concepts/baota-panel-commands.md（添加面板端口管理）
+- 更新: index.md（+4 pages，共 38 页）
