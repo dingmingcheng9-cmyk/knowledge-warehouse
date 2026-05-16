@@ -178,3 +178,11 @@
 - 新建: concepts/self-built-vpn-legal-boundary.md
 - 更新: index.md
 
+
+## [2026-05-16] ingest | 豆包对话：论文代写与 AI 去水印网站的法律风险
+- 来源: https://www.doubao.com/thread/a881d000ab2d6
+- raw: raw/thesis-watermark-legal-doubao-conversation.md
+- 新建: concepts/thesis-writing-fraud-legal-risk.md
+- 新建: concepts/ai-watermark-removal-legal-risk.md
+- 更新: index.md
+
