@@ -2,7 +2,7 @@
 
 > 知识库目录。每个页面按类型归类，附带一行摘要。
 > 提问前先查阅此处，快速找到相关页面。
-> 最后更新: 2026-05-14 | 总页数: 38
+> 最后更新: 2026-05-16 | 总页数: 39
 
 ## Entities（实体）
 
@@ -29,6 +29,7 @@
 - [[mere-exposure-effect]] — 曝光效应与第一印象：反复接触如何改变对人判断的三个心理学效应
 - [[os-handles-and-resource-management]] — 句柄与系统资源管理：句柄泄漏、Windows vs Linux 资源管理对比
 - [[python-environment-management]] — Python 运行方式对比：uv / pip / venv / 系统 Python 的适用场景与判断口诀
+- [[self-built-vpn-legal-boundary]] — 自建 VPN/内网穿透的法律边界：判断公式、底层逻辑、合法方案、个人合规跨境访问的现实
 - [[sep-patent-business-model]] — 标准必要专利（SEP）商业模式：华为/高通/诺基亚专利收入对比，SEP 作为"永续印钞机"的逻辑
 - [[sqlalchemy-orm-basics]] — SQLAlchemy ORM 数据库操作：ORM 概念、SQLite 集成、模型定义、CRUD 查询
 - [[shell-source-command]] — Shell source 命令：在当前进程执行脚本、激活虚拟环境、vs 子进程对比

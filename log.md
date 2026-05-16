@@ -171,3 +171,10 @@
 - 更新: concepts/docker-container-basics.md（添加容器内外查询命令）
 - 更新: concepts/baota-panel-commands.md（添加面板端口管理）
 - 更新: index.md（+4 pages，共 38 页）
+
+## [2026-05-16] ingest | 豆包对话：自建 VPN/内网穿透技术教程与法律边界
+- 来源: https://www.doubao.com/thread/af35dea467ac0
+- raw: raw/vpn-internet-penetration-legal-doubao-conversation.md
+- 新建: concepts/self-built-vpn-legal-boundary.md
+- 更新: index.md
+
