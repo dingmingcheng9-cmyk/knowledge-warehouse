@@ -2,7 +2,7 @@
 
 > 知识库目录。每个页面按类型归类，附带一行摘要。
 > 提问前先查阅此处，快速找到相关页面。
-> 最后更新: 2026-05-16 | 总页数: 41
+> 最后更新: 2026-05-17 | 总页数: 42
 
 ## Entities（实体）
 
@@ -21,6 +21,7 @@
 - [[docker-container-basics]] — Docker run 常用参数：端口映射、目录挂载、环境变量、开机自启、commit vs save；容器内外查询命令
 - [[domain-name-basics]] — 域名基础知识：TLD/DNS/注册续费/ICANN&CNNIC/域名vs商标/优质域名
 - [[fastapi-basics]] — FastAPI 后端框架核心概念：环境搭建、路由三要素（HTTP方法/URL/函数）、路径参数、curl测试
+- [[hermes-agent-architecture]] — Hermes Agent 架构探秘：会话隔离/记忆系统/Profiles多智能体实例/多智能体协作
 - [[hermes-agent-commands]] — Hermes Agent 指令集速查：CLI/斜杠命令、进阶功能；含 Windows/Ubuntu/Docker 安装指南
 - [[hermes-cluster-architecture]] — Hermes Cluster 多机统一管理平台项目架构：中心服务/节点代理/可插拔连接器设计
 - [[independent-college-economics]] — 民办独立学院投资与盈利模式：以浙江财经大学东方学院为例，建设成本、学费收入、回本周期

@@ -186,3 +186,8 @@
 - 新建: concepts/ai-watermark-removal-legal-risk.md
 - 更新: index.md
 
+
+## [2026-05-17] ingest | Hermes Agent 架构探索对话（会话导出）
+- raw: raw/hermes-agent-architecture-exploration.md
+- concept: concepts/hermes-agent-architecture.md
+- 内容：会话隔离/记忆系统/Profiles/多智能体协作架构的深入探讨
