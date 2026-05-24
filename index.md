@@ -2,7 +2,7 @@
 
 > 知识库目录。每个页面按类型归类，附带一行摘要。
 > 提问前先查阅此处，快速找到相关页面。
-> 最后更新: 2026-05-14 | 总页数: 38
+> 最后更新: 2026-05-17 | 总页数: 42
 
 ## Entities（实体）
 
@@ -10,6 +10,7 @@
 
 ## Concepts（概念）
 
+- [[ai-watermark-removal-legal-risk]] — AI去水印网站合法性分析：个人去水印 vs 提供网站服务的风险分层，2025《AI标识办法》边界
 - [[baota-panel-commands]] — 宝塔 Linux 面板 CLI 命令速查：启动/重启/停止、核心组件管理、手动兜底；面板端口管理与防火墙放行
 - [[china-cloud-market]] — 中国云市场格局：阿里/华为/腾讯/三大运营商份额，阿里云战略转型，云计算重资产特性
 - [[china-home-broadband-public-ip]] — 国内家用宽带公网 IP 现状：CGNAT、移动不给免费、替代方案对比
@@ -20,6 +21,7 @@
 - [[docker-container-basics]] — Docker run 常用参数：端口映射、目录挂载、环境变量、开机自启、commit vs save；容器内外查询命令
 - [[domain-name-basics]] — 域名基础知识：TLD/DNS/注册续费/ICANN&CNNIC/域名vs商标/优质域名
 - [[fastapi-basics]] — FastAPI 后端框架核心概念：环境搭建、路由三要素（HTTP方法/URL/函数）、路径参数、curl测试
+- [[hermes-agent-architecture]] — Hermes Agent 架构探秘：会话隔离/记忆系统/Profiles多智能体实例/多智能体协作
 - [[hermes-agent-commands]] — Hermes Agent 指令集速查：CLI/斜杠命令、进阶功能；含 Windows/Ubuntu/Docker 安装指南
 - [[hermes-cluster-architecture]] — Hermes Cluster 多机统一管理平台项目架构：中心服务/节点代理/可插拔连接器设计
 - [[independent-college-economics]] — 民办独立学院投资与盈利模式：以浙江财经大学东方学院为例，建设成本、学费收入、回本周期
@@ -29,6 +31,8 @@
 - [[mere-exposure-effect]] — 曝光效应与第一印象：反复接触如何改变对人判断的三个心理学效应
 - [[os-handles-and-resource-management]] — 句柄与系统资源管理：句柄泄漏、Windows vs Linux 资源管理对比
 - [[python-environment-management]] — Python 运行方式对比：uv / pip / venv / 系统 Python 的适用场景与判断口诀
+- [[self-built-vpn-legal-boundary]] — 自建 VPN/内网穿透的法律边界：判断公式、底层逻辑、合法方案、个人合规跨境访问的现实
+- [[thesis-writing-fraud-legal-risk]] — 本科论文代写的法律风险：学生后果（取消学位/开除/黑名单）vs 代写机构刑事风险（非法经营罪/诈骗）
 - [[sep-patent-business-model]] — 标准必要专利（SEP）商业模式：华为/高通/诺基亚专利收入对比，SEP 作为"永续印钞机"的逻辑
 - [[sqlalchemy-orm-basics]] — SQLAlchemy ORM 数据库操作：ORM 概念、SQLite 集成、模型定义、CRUD 查询
 - [[shell-source-command]] — Shell source 命令：在当前进程执行脚本、激活虚拟环境、vs 子进程对比

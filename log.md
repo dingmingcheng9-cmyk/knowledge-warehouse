@@ -171,3 +171,23 @@
 - 更新: concepts/docker-container-basics.md（添加容器内外查询命令）
 - 更新: concepts/baota-panel-commands.md（添加面板端口管理）
 - 更新: index.md（+4 pages，共 38 页）
+
+## [2026-05-16] ingest | 豆包对话：自建 VPN/内网穿透技术教程与法律边界
+- 来源: https://www.doubao.com/thread/af35dea467ac0
+- raw: raw/vpn-internet-penetration-legal-doubao-conversation.md
+- 新建: concepts/self-built-vpn-legal-boundary.md
+- 更新: index.md
+
+
+## [2026-05-16] ingest | 豆包对话：论文代写与 AI 去水印网站的法律风险
+- 来源: https://www.doubao.com/thread/a881d000ab2d6
+- raw: raw/thesis-watermark-legal-doubao-conversation.md
+- 新建: concepts/thesis-writing-fraud-legal-risk.md
+- 新建: concepts/ai-watermark-removal-legal-risk.md
+- 更新: index.md
+
+
+## [2026-05-17] ingest | Hermes Agent 架构探索对话（会话导出）
+- raw: raw/hermes-agent-architecture-exploration.md
+- concept: concepts/hermes-agent-architecture.md
+- 内容：会话隔离/记忆系统/Profiles/多智能体协作架构的深入探讨
