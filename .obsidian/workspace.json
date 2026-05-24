@@ -11,10 +11,14 @@
             "id": "fc10fff83e87c2bf",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "type": "markdown",
+              "state": {
+                "file": "concepts/hermes-agent-commands.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "hermes-agent-commands"
             }
           }
         ]
@@ -192,6 +196,7 @@
   },
   "active": "fc10fff83e87c2bf",
   "lastOpenFiles": [
+    "concepts/hermes-agent-commands.md",
     "raw/knowledge-learning-notes.md",
     "raw/jumpserver-deployment-doubao-conversation.md",
     "raw/jumpserver-conversation-summary.md",
@@ -202,7 +207,6 @@
     "concepts/jumpserver-bastion-deployment.md",
     "concepts/hermes-cluster-architecture.md",
     "2026-05-14.md",
-    "concepts/hermes-agent-commands.md",
     "concepts/python-environment-management.md",
     "concepts/cloudflare-tunnel.md",
     "raw/articles/l8-env-config-teaching-backup.md",
