@@ -192,6 +192,7 @@
   },
   "active": "a9976726760f1574",
   "lastOpenFiles": [
+    "concepts/hermes-agent-memory-system.md",
     "concepts/hermes-agent-commands.md",
     "raw/vpn-internet-penetration-legal-doubao-conversation.md",
     "raw/thesis-watermark-legal-doubao-conversation.md",
@@ -218,7 +219,6 @@
     "concepts/jwt-authentication.md",
     "raw/doubao-source-jwt-conversation.md",
     "raw/baota-docker-doubao-conversation.md",
-    "concepts/docker-container-basics.md",
     "未命名 1.canvas",
     "未命名.base"
   ]
