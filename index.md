@@ -2,7 +2,7 @@
 
 > 知识库目录。每个页面按类型归类，附带一行摘要。
 > 提问前先查阅此处，快速找到相关页面。
-> 最后更新: 2026-05-17 | 总页数: 42
+> 最后更新: 2026-05-25 | 总页数: 43
 
 ## Entities（实体）
 
@@ -23,6 +23,8 @@
 - [[fastapi-basics]] — FastAPI 后端框架核心概念：环境搭建、路由三要素（HTTP方法/URL/函数）、路径参数、curl测试
 - [[hermes-agent-architecture]] — Hermes Agent 架构探秘：会话隔离/记忆系统/Profiles多智能体实例/多智能体协作
 - [[hermes-agent-commands]] — Hermes Agent 指令集速查：CLI/斜杠命令、进阶功能；含 Windows/Ubuntu/Docker 安装指南
+- [[hermes-cluster-architecture]] — Hermes Cluster 多机统一管理平台项目架构：中心服务/节点代理/可插拔连接器设计
+- [[hermes-agent-memory-system]] — Hermes Agent 三层记忆机制：memory/session_search/skills 的差异与token成本对比，单槽轮换摘要方案
 - [[hermes-cluster-architecture]] — Hermes Cluster 多机统一管理平台项目架构：中心服务/节点代理/可插拔连接器设计
 - [[independent-college-economics]] — 民办独立学院投资与盈利模式：以浙江财经大学东方学院为例，建设成本、学费收入、回本周期
 - [[jumpserver-bastion-deployment]] — JumpServer 堡垒机资源占用与部署方案：2C2G/2C4G 配置分析、轻量替代方案（Guacamole/Teleport）
@@ -55,3 +57,4 @@
 - [[hermes-agent-skills]] — Hermes Agent 90+ 内置技能总览，按领域分类
 - [[ubuntu-network-connectivity-test]] — Ubuntu 外网/国际网络连通性测试命令与判断口诀
 - [[wingtech-st-analysis]] — 闻泰科技 ST 警告分析：荷兰夺权安世、审计非标、资产缩水，公司前景研判
+
