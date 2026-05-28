@@ -2,7 +2,7 @@
 
 > 知识库目录。每个页面按类型归类，附带一行摘要。
 > 提问前先查阅此处，快速找到相关页面。
-> 最后更新: 2026-05-25 | 总页数: 43
+> 最后更新: 2026-05-28 | 总页数: 47
 
 ## Entities（实体）
 
@@ -24,22 +24,25 @@
 - [[hermes-agent-architecture]] — Hermes Agent 架构探秘：会话隔离/记忆系统/Profiles多智能体实例/多智能体协作
 - [[hermes-agent-commands]] — Hermes Agent 指令集速查：CLI/斜杠命令、进阶功能；含 Windows/Ubuntu/Docker 安装指南
 - [[hermes-cluster-architecture]] — Hermes Cluster 多机统一管理平台项目架构：中心服务/节点代理/可插拔连接器设计
-- [[hermes-agent-memory-system]] — Hermes Agent 三层记忆机制：memory/session_search/skills 的差异与token成本对比，单槽轮换摘要方案
-- [[hermes-cluster-architecture]] — Hermes Cluster 多机统一管理平台项目架构：中心服务/节点代理/可插拔连接器设计
 - [[independent-college-economics]] — 民办独立学院投资与盈利模式：以浙江财经大学东方学院为例，建设成本、学费收入、回本周期
 - [[jumpserver-bastion-deployment]] — JumpServer 堡垒机资源占用与部署方案：2C2G/2C4G 配置分析、轻量替代方案（Guacamole/Teleport）
 - [[jwt-authentication]] — JWT 认证与密码哈希：bcrypt 密码哈希、盐、JWT 签名验签、FastAPI JWT 实现
 - [[linux-proc-filesystem]] — Linux /proc 虚拟文件系统：查看进程、硬件信息、内核参数、系统状态
 - [[mere-exposure-effect]] — 曝光效应与第一印象：反复接触如何改变对人判断的三个心理学效应
+- [[nat-port-forwarding]] — NAT 与端口映射：家用路由器 NAT 自动分发 vs 手动端口映射，FRP XTCP P2P 打洞原理
+- [[network-protocols-basics]] — 网络协议基础（TCP/UDP/HTTP/HTTPS）：协议层级、三次握手、端口速查、内网外网选型口诀
 - [[os-handles-and-resource-management]] — 句柄与系统资源管理：句柄泄漏、Windows vs Linux 资源管理对比
+- [[proxy-types]] — 代理类型 HTTP vs SOCKS5：HTTP 代理网页、SOCKS5 全局代理适用场景，与 SMB 连接冲突的解决
 - [[python-environment-management]] — Python 运行方式对比：uv / pip / venv / 系统 Python 的适用场景与判断口诀
 - [[self-built-vpn-legal-boundary]] — 自建 VPN/内网穿透的法律边界：判断公式、底层逻辑、合法方案、个人合规跨境访问的现实
 - [[thesis-writing-fraud-legal-risk]] — 本科论文代写的法律风险：学生后果（取消学位/开除/黑名单）vs 代写机构刑事风险（非法经营罪/诈骗）
 - [[sep-patent-business-model]] — 标准必要专利（SEP）商业模式：华为/高通/诺基亚专利收入对比，SEP 作为"永续印钞机"的逻辑
 - [[sqlalchemy-orm-basics]] — SQLAlchemy ORM 数据库操作：ORM 概念、SQLite 集成、模型定义、CRUD 查询
 - [[shell-source-command]] — Shell source 命令：在当前进程执行脚本、激活虚拟环境、vs 子进程对比
+- [[ssh-tunnel]] — SSH 隧道：本地/远程/动态三种端口转发模式，与 FRP 对比，SMB 穿透方案
 - [[time-exclusivity-and-efficiency]] — 时间的排他性与效率性：选择即放弃，单位时间产出决定差距
 - [[ubuntu-ssh-remote-setup]] — Ubuntu SSH 远程连接配置：openssh-server 安装、防火墙放行、Windows 客户端连接
+- [[webdav-protocol]] — WebDAV 协议：基于 HTTP 的网络文件管理协议，与 SMB/FTP 对比，安全要点
 
 ## Comparisons（对比）
 
@@ -57,4 +60,3 @@
 - [[hermes-agent-skills]] — Hermes Agent 90+ 内置技能总览，按领域分类
 - [[ubuntu-network-connectivity-test]] — Ubuntu 外网/国际网络连通性测试命令与判断口诀
 - [[wingtech-st-analysis]] — 闻泰科技 ST 警告分析：荷兰夺权安世、审计非标、资产缩水，公司前景研判
-
