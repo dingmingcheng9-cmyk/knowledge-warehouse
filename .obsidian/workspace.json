@@ -192,6 +192,13 @@
   },
   "active": "a9976726760f1574",
   "lastOpenFiles": [
+    "raw/articles/doubao-network-protocols-conversation.md",
+    "concepts/webdav-protocol.md",
+    "concepts/ssh-tunnel.md",
+    "concepts/proxy-types.md",
+    "concepts/nodejs-basics.md",
+    "concepts/network-protocols-basics.md",
+    "concepts/nat-port-forwarding.md",
     "concepts/hermes-agent-memory-system.md",
     "concepts/hermes-agent-commands.md",
     "raw/vpn-internet-penetration-legal-doubao-conversation.md",
@@ -211,14 +218,7 @@
     "concepts/jumpserver-bastion-deployment.md",
     "concepts/hermes-cluster-architecture.md",
     "2026-05-14.md",
-    "concepts/python-environment-management.md",
-    "concepts/cloudflare-tunnel.md",
-    "raw/articles/l8-env-config-teaching-backup.md",
-    "raw/articles/jwt-hash-env-doubao-conversation.md",
     "未命名.canvas",
-    "concepts/jwt-authentication.md",
-    "raw/doubao-source-jwt-conversation.md",
-    "raw/baota-docker-doubao-conversation.md",
     "未命名 1.canvas",
     "未命名.base"
   ]
