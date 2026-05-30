@@ -11,10 +11,14 @@
             "id": "a9976726760f1574",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "type": "markdown",
+              "state": {
+                "file": "concepts/webdav-protocol.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "webdav-protocol"
             }
           }
         ]
