@@ -207,3 +207,9 @@
 - raw: raw/articles/wsl-mirrored-network-notes.md, raw/articles/wsl2-status-network-20260616.md
 - 新建: concepts/wsl-mirrored-network.md（两篇合并：WSL NAT vs Mirrored 模式对比、网络拓扑、Plan 9 文件系统、故障处理）
 - 更新: index.md（+1 页，总页数 48）
+
+## [2026-06-16] ingest | WSL2 指令速查手册
+- 来源: 用户发送文档（WSL2指令速查手册_20260616.md）
+- raw: raw/articles/wsl2-commands-cheatsheet.md
+- 新建: concepts/wsl2-commands-cheatsheet.md（WSL2 指令速查手册，包含基础管理/发行版管理/配置/文件互操作/网络/故障处理等 9 大类）
+- 更新: index.md（+1 页，总页数 49）

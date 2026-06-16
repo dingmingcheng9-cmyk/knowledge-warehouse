@@ -2,7 +2,7 @@
 
 > 知识库目录。每个页面按类型归类，附带一行摘要。
 > 提问前先查阅此处，快速找到相关页面。
-> 最后更新: 2026-06-16 | 总页数: 48
+> 最后更新: 2026-06-16 | 总页数: 49
 
 ## Entities（实体）
 
@@ -44,6 +44,7 @@
 - [[ubuntu-ssh-remote-setup]] — Ubuntu SSH 远程连接配置：openssh-server 安装、防火墙放行、Windows 客户端连接
 - [[webdav-protocol]] — WebDAV 协议：基于 HTTP 的网络文件管理协议，与 SMB/FTP 对比，安全要点
 - [[wsl-mirrored-network]] — WSL 镜像网络模式：WSL NAT vs Mirrored 模式对比、网络拓扑、Plan 9 文件系统访问方式、故障处理
+- [[wsl2-commands-cheatsheet]] — WSL2 指令速查手册：基础管理、发行版管理、配置、文件互操作、网络排查、故障处理
 
 ## Comparisons（对比）
 
