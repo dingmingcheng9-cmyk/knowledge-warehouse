@@ -69,14 +69,14 @@ uv run hermes gateway          # 启动网关
 | `hermes --resume SESSION` | 恢复指定会话 |
 
 ### 配置
-| 指令 | 说明 |
-|------|------|
-| `hermes config` | 查看当前配置 |
-| `hermes config edit` | 编辑 config.yaml |
-| `hermes config set KEY VAL` | 设置配置值 |
-| `hermes config list` | 显示所有生效配置项 |
-| `hermes model` | 交互式模型/提供商选择 |
-| `hermes auth` | 管理 API 凭证（添加/列出/删除/策略设置） |
+| 指令                          | 说明                       |
+| --------------------------- | ------------------------ |
+| `hermes config`             | 查看当前配置                   |
+| `hermes config edit`        | 编辑 config.yaml           |
+| `hermes config set KEY VAL` | 设置配置值                    |
+| `hermes config list`        | 显示所有生效配置项                |
+| `hermes model`              | 交互式模型/提供商选择              |
+| `hermes auth`               | 管理 API 凭证（添加/列出/删除/策略设置） |
 
 ### 认证 & 凭证
 | 指令 | 说明 |

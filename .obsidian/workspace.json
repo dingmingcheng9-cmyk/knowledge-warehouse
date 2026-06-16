@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "concepts/hermes-agent-commands.md",
+                "file": "concepts/hermes-cluster-architecture.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "hermes-agent-commands"
+              "title": "hermes-cluster-architecture"
             }
           }
         ]
@@ -196,6 +196,8 @@
   },
   "active": "18c82544f9788f3a",
   "lastOpenFiles": [
+    "concepts/jumpserver-bastion-deployment.md",
+    "concepts/hermes-agent-commands.md",
     "concepts/webdav-protocol.md",
     "未命名.md",
     "raw/articles/wsl2-status-network-20260616.md",
@@ -210,7 +212,6 @@
     "concepts/network-protocols-basics.md",
     "concepts/nat-port-forwarding.md",
     "concepts/hermes-agent-memory-system.md",
-    "concepts/hermes-agent-commands.md",
     "raw/vpn-internet-penetration-legal-doubao-conversation.md",
     "raw/thesis-watermark-legal-doubao-conversation.md",
     "raw/hermes-agent-architecture-exploration.md",
@@ -221,7 +222,6 @@
     "raw/knowledge-learning-notes.md",
     "raw/jumpserver-deployment-doubao-conversation.md",
     "raw/jumpserver-conversation-summary.md",
-    "queries/ubuntu-network-connectivity-test.md",
     "未命名.canvas",
     "未命名 1.canvas",
     "未命名.base"
