@@ -11,10 +11,14 @@
             "id": "18c82544f9788f3a",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "type": "markdown",
+              "state": {
+                "file": "concepts/hermes-agent-commands.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "hermes-agent-commands"
             }
           }
         ]
