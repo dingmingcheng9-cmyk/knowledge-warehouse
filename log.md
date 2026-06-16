@@ -201,3 +201,9 @@
 - 新建: concepts/proxy-types.md（HTTP/SOCKS5 代理类型对比）
 - 新建: concepts/nat-port-forwarding.md（NAT vs 端口映射，FRP XTCP P2P）
 - 更新: index.md（+5 页，总页数 47）
+
+## [2026-06-16] ingest | WSL 镜像网络模式笔记合并
+- 来源: 用户发送文档合并（WSL镜像网络模式笔记.md + WSL2状态与网络分析_20260616.md）
+- raw: raw/articles/wsl-mirrored-network-notes.md, raw/articles/wsl2-status-network-20260616.md
+- 新建: concepts/wsl-mirrored-network.md（两篇合并：WSL NAT vs Mirrored 模式对比、网络拓扑、Plan 9 文件系统、故障处理）
+- 更新: index.md（+1 页，总页数 48）

@@ -2,7 +2,7 @@
 
 > 知识库目录。每个页面按类型归类，附带一行摘要。
 > 提问前先查阅此处，快速找到相关页面。
-> 最后更新: 2026-05-28 | 总页数: 47
+> 最后更新: 2026-06-16 | 总页数: 48
 
 ## Entities（实体）
 
@@ -43,6 +43,7 @@
 - [[time-exclusivity-and-efficiency]] — 时间的排他性与效率性：选择即放弃，单位时间产出决定差距
 - [[ubuntu-ssh-remote-setup]] — Ubuntu SSH 远程连接配置：openssh-server 安装、防火墙放行、Windows 客户端连接
 - [[webdav-protocol]] — WebDAV 协议：基于 HTTP 的网络文件管理协议，与 SMB/FTP 对比，安全要点
+- [[wsl-mirrored-network]] — WSL 镜像网络模式：WSL NAT vs Mirrored 模式对比、网络拓扑、Plan 9 文件系统访问方式、故障处理
 
 ## Comparisons（对比）
 
