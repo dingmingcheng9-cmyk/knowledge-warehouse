@@ -61,4 +61,5 @@
 - [[software-architecture-download]] — 软件下载页架构与格式解析：x64/arm64/x86、.msi vs .exe
 - [[hermes-agent-skills]] — Hermes Agent 90+ 内置技能总览，按领域分类
 - [[ubuntu-network-connectivity-test]] — Ubuntu 外网/国际网络连通性测试命令与判断口诀
+- [[doubao-thread-a1a276c6ab2a0]] — 豆包 Thread 问答存档：合法图书下载/Docker 镜像源/Hermes 登录/路由器组网/虚拟化架构
 - [[wingtech-st-analysis]] — 闻泰科技 ST 警告分析：荷兰夺权安世、审计非标、资产缩水，公司前景研判
