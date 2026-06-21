@@ -196,9 +196,10 @@
   },
   "active": "18c82544f9788f3a",
   "lastOpenFiles": [
+    "concepts/hermes-agent-commands.md",
+    "queries/doubao-thread-a1a276c6ab2a0.md",
     "concepts/hermes-cluster-architecture.md",
     "concepts/jumpserver-bastion-deployment.md",
-    "concepts/hermes-agent-commands.md",
     "concepts/webdav-protocol.md",
     "未命名.md",
     "raw/articles/wsl2-status-network-20260616.md",
@@ -221,7 +222,6 @@
     "concepts/hermes-agent-architecture.md",
     "concepts/ai-watermark-removal-legal-risk.md",
     "raw/knowledge-learning-notes.md",
-    "raw/jumpserver-deployment-doubao-conversation.md",
     "未命名.canvas",
     "未命名 1.canvas",
     "未命名.base"
