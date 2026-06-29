@@ -213,3 +213,9 @@
 - raw: raw/articles/wsl2-commands-cheatsheet.md
 - 新建: concepts/wsl2-commands-cheatsheet.md（WSL2 指令速查手册，包含基础管理/发行版管理/配置/文件互操作/网络/故障处理等 9 大类）
 - 更新: index.md（+1 页，总页数 49）
+
+## [2026-06-21] ingest | DeepSeek 共享对话：常见 Windows 命令和 Linux 命令
+- 来源: https://chat.deepseek.com/share/9itr8yzwo2jwvq4naf
+- raw: raw/articles/deepseek-windows-linux-commands.md
+- 新建: concepts/windows-linux-commands-comparison.md（Windows CMD 和 Linux Shell 18 类 100+ 命令速查，含快速对比表）
+- 更新: index.md（+1 页，总页数 50）

@@ -2,7 +2,7 @@
 
 > 知识库目录。每个页面按类型归类，附带一行摘要。
 > 提问前先查阅此处，快速找到相关页面。
-> 最后更新: 2026-06-16 | 总页数: 49
+> 最后更新: 2026-06-21 | 总页数: 50
 
 ## Entities（实体）
 
@@ -45,6 +45,7 @@
 - [[webdav-protocol]] — WebDAV 协议：基于 HTTP 的网络文件管理协议，与 SMB/FTP 对比，安全要点
 - [[wsl-mirrored-network]] — WSL 镜像网络模式：WSL NAT vs Mirrored 模式对比、网络拓扑、Plan 9 文件系统访问方式、故障处理
 - [[wsl2-commands-cheatsheet]] — WSL2 指令速查手册：基础管理、发行版管理、配置、文件互操作、网络排查、故障处理
+- [[windows-linux-commands-comparison]] — Windows CMD 与 Linux Shell 命令速查对比：18 类 100+ 命令对照表与快速对比
 
 ## Comparisons（对比）
 
@@ -63,3 +64,4 @@
 - [[ubuntu-network-connectivity-test]] — Ubuntu 外网/国际网络连通性测试命令与判断口诀
 - [[doubao-thread-a1a276c6ab2a0]] — 豆包 Thread 问答存档：合法图书下载/Docker 镜像源/Hermes 登录/路由器组网/虚拟化架构
 - [[wingtech-st-analysis]] — 闻泰科技 ST 警告分析：荷兰夺权安世、审计非标、资产缩水，公司前景研判
+- [[doubao-thread-a418512074d70]] — 豆包 Thread 问答存档：中国传媒产业规模/就业数据、制造业/服务业对比、第三产业组成、欧美传媒占比、经济结构与发达程度关系
