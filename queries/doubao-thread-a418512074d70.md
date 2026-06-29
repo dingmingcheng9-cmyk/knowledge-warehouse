@@ -1,6 +1,7 @@
 # 豆包 Thread 问答存档：媒体行业规模、制造业与服务业对比
 
 > 来源：https://www.doubao.com/thread/a418512074d70
+> 原始对话：[[../raw/doubao-media-industry-conversation]]
 > 日期：2026-06-29 | AI 生成内容，仅供参考
 
 ## 一、中国媒体/传媒产业总产值
